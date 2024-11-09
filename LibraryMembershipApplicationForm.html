@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Library Membership Form</legend>
+            <label for="th-name">ชื่อ-นามสกุล :</label>
+            <input type="text" name="th-name" id="th-name" required><br><br>
+    
+            <label for="eng-name">Name :</label>
+            <input type="text" name="eng-name" id="eng-name" required><br><br>
+    
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="lgbt" name="gender" value="lgbt">
+            <label for="female">LGBT</label><br><br>
+    
+            <label for="student-id">รหัสนักศึกษา (Student ID) :</label>
+            <input type="text" id="student-id" name="student-id" required><br><br>
+    
+            <label for="faculty">คณะที่ศึกษา :</label>
+            <input type="text" name="faculty" id="faculty"><br><br>
+    
+            <label for="email">Email Address :</label>
+            <input type="email" name="email" placeholder="@dome.tu.ac.th" required><br><br>
+    
+            <label for="birthday">วันเดือนปีเกิด (Date of Birth) :</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+    
+            <label for="genres">ประเภทหนังสือที่สนใจ (Genres of books)</label>
+            <br><br>
+    
+            <label for="updates">Check this box if you would like to receive updates from the library</label>
+            <br><br>
+            <input type="checkbox"> Yes, I would like. <br><br>
+    
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</body>
+</html>
