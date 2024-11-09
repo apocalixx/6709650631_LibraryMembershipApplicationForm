@@ -1,49 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Membership Form</title>
+    <link rel="icon" type="image/x-icon" href="resources/favicon.png">
+    <link rel="stylesheet" href="mystyle.css">
 </head>
+
 <body>
-    <form>
+    <h1 id="title">Library Membership Form</h1>
+    <form id="form">
         <fieldset>
-            <legend>Library Membership Form</legend>
-            <label for="th-name">ชื่อ-นามสกุล :</label>
-            <input type="text" name="th-name" id="th-name" required><br><br>
-    
-            <label for="eng-name">Name :</label>
-            <input type="text" name="eng-name" id="eng-name" required><br><br>
-    
-            <label for="gender">Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
+            <br>
+            <label for="th-name">*ชื่อ-นามสกุล :</label>
+            <input type="text" name="th-name" id="th-name" required size="30"><br><br>
+
+            <label for="eng-name">*Name :</label>
+            <input type="text" name="eng-name" id="eng-name" required size="35"><br><br>
+
+            <label for="gender">*เพศ (Gender):</label><br>
+            <input type="radio" required id="male" name="gender" value="male">
+            <label for="male">ชาย (Male)</label><br>
             <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
+            <label for="female">หญิง (Female)</label><br>
             <input type="radio" id="lgbt" name="gender" value="lgbt">
             <label for="female">LGBT</label><br><br>
-    
-            <label for="student-id">รหัสนักศึกษา (Student ID) :</label>
+
+            <label for="student-id">*รหัสนักศึกษา (Student ID) :</label>
             <input type="text" id="student-id" name="student-id" required><br><br>
-    
-            <label for="faculty">คณะที่ศึกษา :</label>
-            <input type="text" name="faculty" id="faculty"><br><br>
-    
-            <label for="email">Email Address :</label>
-            <input type="email" name="email" placeholder="@dome.tu.ac.th" required><br><br>
-    
-            <label for="birthday">วันเดือนปีเกิด (Date of Birth) :</label>
-            <input type="date" id="birthday" name="birthday"><br><br>
-    
-            <label for="genres">ประเภทหนังสือที่สนใจ (Genres of books)</label>
+
+            <label for="faculty">*คณะที่ศึกษา :</label>
+            <select id="faculty" required ="faculty">
+                <option value="" disabled selected>เลือกคณะของคุณ</option>
+                <option value="Law">คณะนิติศาสตร์</option>
+                <option value="Commerce and Accountancy">คณะพาณิชยศาสตร์และการบัญชี</option>
+                <option value="Political Science">คณะรัฐศาสตร์</option>
+                <option value="Economics">คณะเศรษฐศาสตร์</option>
+                <option value="Social Work">คณะสังคมสงเคราะห์ศาสตร์</option>
+                <option value="Sociology and Anthropology">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                <option value="Liberal Arts">คณะศิลปศาสตร์</option>
+                <option value="Journalism and Mass Communication">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                <option value="Science and Technology">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                <option value="Engineering">คณะวิศวกรรมศาสตร์</option>
+                <option value="Architecture and Planning">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                <option value="Fine and Applied Arts">คณะศิลปกรรมศาสตร์</option>
+                <option value="Medicine">คณะแพทยศาสตร์</option>
+                <option value="Allied Health Sciences">คณะสหเวชศาสตร์</option>
+                <option value="Dentistry">คณะทันตแพทยศาสตร์</option>
+                <option value="Nursing">คณะพยาบาลศาสตร์</option>
+                <option value="Public Health">คณะสาธารณสุขศาสตร์</option>
+                <option value="Pharmacy">คณะเภสัชศาสตร์</option>
+                <option value="Learning Sciences and Education">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                <option value="Puey Ungphakorn School of Development Studies">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์
+                </option>
+                <option value="College of Innovation">วิทยาลัยนวัตกรรม</option>
+                <option value="College of Interdisciplinary Studies">วิทยาลัยสหวิทยาการ</option>
+                <option value="College of Global Studies">วิทยาลัยโลกคดีศึกษา</option>
+                <option value="Sirindhorn International Institute of Technology">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                <option value="Pridi Banomyong International College">วิทยาลัยนานาชาติ ปรีดี พนมยงค์</option>
+                <option value="Chulabhorn International College of Medicine">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+                <option value="Institute of Continuing Education and Human Resources">สถาบันเสริมศึกษาและทรัพยากรมนุษย์
+                </option>
+                <option value="Institute of Thai Studies">สถาบันไทยคดีศึกษา</option>
+                <option value="Institute of East Asian Studies">สถาบันเอเชียตะวันออกศึกษา</option>
+                <option value="Institute of Languages">สถาบันภาษา</option>
+                <option value="Institute of Area Studies">สถาบันอาณาบริเวณศึกษา</option>
+            </select>
             <br><br>
-    
-            <label for="updates">Check this box if you would like to receive updates from the library</label>
-            <br><br>
-            <input type="checkbox"> Yes, I would like. <br><br>
-    
-            <input type="submit" value="Register">
+
+            <label for="email">*Email Address :</label>
+            <input type="email" size="30" name="email" placeholder="                 @dome.tu.ac.th" required><br><br>
+
+            <label for="birthday">*วันเดือนปีเกิด (Date of Birth) :</label>
+            <input type="date" required id="birthday" name="birthday"><br><br>
+
+            <label for="genres">ประเภทหนังสือที่สนใจ (Genres of books) :</label>
+            <input type="genres" size="25"  name="genres"><br><br>
+
+            <label for="updates">หากท่านต้องการรับข่าวสารอัปเดตจากห้องสมุด กรุณาทำเครื่องหมายถูกในช่องนี้</label><br>
+            <input type="checkbox"> ฉันต้องการรับข่าวสารอัปเดตจากห้องสมุด <br><br>
+
+            <input type="submit" value="Register" style="font-family:TH Sarabun New ; font-size: 18px;">
         </fieldset>
     </form>
 </body>
+
 </html>

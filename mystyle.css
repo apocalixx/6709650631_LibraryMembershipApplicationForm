@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'TH Sarabun New';
+    src: url('resources/THSarabunNew.ttf') format('truetype');
+}
+
+body {
+    font-family: 'TH Sarabun New';
+    text-shadow: 1px;
+    background-color: #a90320;
+}
+
+#title{
+    color: white;
+    padding-left: 20px;
+}
+#form {
+    background-color: #fbf2f2;
+    font-size: 24px;
+}
